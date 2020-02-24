@@ -1,6 +1,6 @@
 unsigned long timing;
-#define WAIT 10UL   //in sec both
-#define WORK 3      //in sec both
+#define WAIT 25200UL   //in sec both (7 часов)
+#define WORK 10      //in sec both
 
 void setup() {
   for (byte i = 0; i < 6; i++) {
@@ -8,7 +8,7 @@ void setup() {
   }
   pinMode(1, OUTPUT);
   digitalWrite(1,1);
-  delay(2000);
+  delay(2000); // test after start. 2 Sec pump water
   digitalWrite(1,0);
 }
 
